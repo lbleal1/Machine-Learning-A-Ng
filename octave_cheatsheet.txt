@@ -1,0 +1,80 @@
+# plot 
+
+# - line plot
+
+* single plot
+plot(x,y)
+
+* multiple plots
+plot(x,y);
+hold on;
+plot(x1,y1);
+
+# - beautifying plots
+plot(x,y, 'color')
+xlabel('insert here')
+ylabel('insert here')
+legend('label1', 'label2')
+title('your title')
+
+*saving
+print -dpng 'fname.png'
+cd 'path to folder'; print -dpng 'fname.png'
+
+# - close plot
+close
+
+
+# - opening multiple figures
+figure(1); plot(x,y);
+figure(2); plot(x1,y1);
+
+# - subplots
+subplot(1,2,1); % divides a plot a 1x2 grid, access the first element
+plot(x,y); % to plot on that place
+
+subplot(1,2,2); % divides a plot a 1x2 grid, access the first element
+plot(x1,y1); % to plot on that place
+
+# - axis scales
+axis([xmin xmax ymin ymax])
+
+# - clear figure
+clf;
+
+
+
+=== control statements
+# - for
+for i=start:stop,
+	v(i) = val;
+end;
+
+# - while
+i=1;
+while i<=5,
+	v(i) = val;
+	i = i + 1;
+end;
+
+# - break and continue
+break;
+continue;
+
+# - if-else
+if cond,
+	do something
+elseif cond,
+	do something
+else,
+	do something
+end;
+
+
+# functions
+-- make sure the script is in the current working directory
+
+*function call
+function y = squareThisNumber(x)
+function [y1, y2] = squareAndCube(x)
+

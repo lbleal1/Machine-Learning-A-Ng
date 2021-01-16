@@ -2,7 +2,7 @@
 This repository contains my answers, in code form and with explanation in pdf form, for the programming assignments in this course. The programming language used is MATLAB.
 
 ## Exercises 
-Listed below are the structures on how I made the pdf report for each exercise.
+The structures below show a bird's-eye view of how I made each pdf report.
 
 ### Exercise 1: Linear Regression
 The exercise covered and implemented Linear Regression with one variable to predict profits for a food truck. 
